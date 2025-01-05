@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactieve Box Model Demo</title>
+    <link rel="stylesheet" href="styles/demo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Interactief box-model demo</h1>
+    </header>
+
+    <div class="container">
+      <div class="box">Tekst in de doos</div>
+
+      <aside class="box-controls">
+        <form>
+          <fieldset>
+            <legend>Afmetingen</legend>
+            <label for="boxWidth">Breedte:</label>
+            <input
+              type="range"
+              min="100"
+              max="500"
+              name="boxWidth"
+              id="boxWidth"
+              value="200"
+              step="5"
+            />
+            <label for="boxHeight">Hoogte:</label>
+            <input
+              type="range"
+              min="100"
+              max="500"
+              name="boxHeight"
+              id="boxHeight"
+              value="200"
+              step="5"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Padding</legend>
+            <label for="boxPaddingTop">Padding Boven:</label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              name="boxPaddingTop"
+              id="boxPaddingTop"
+              value="20"
+              step="5"
+            />
+            <label for="boxPaddingRight">Padding Rechts:</label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              name="boxPaddingRight"
+              id="boxPaddingRight"
+              value="20"
+              step="5"
+            />
+            <label for="boxPaddingBottom">Padding Onder:</label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              name="boxPaddingBottom"
+              id="boxPaddingBottom"
+              value="20"
+              step="5"
+            />
+            <label for="boxPaddingLeft">Padding Links:</label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              name="boxPaddingLeft"
+              id="boxPaddingLeft"
+              value="20"
+              step="5"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Margin</legend>
+            <label for="boxMarginTop">Margin Boven:</label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              name="boxMarginTop"
+              id="boxMarginTop"
+              value="20"
+              step="5"
+            />
+            <label for="boxMarginRight">Margin Rechts:</label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              name="boxMarginRight"
+              id="boxMarginRight"
+              value="20"
+              step="5"
+            />
+            <label for="boxMarginBottom">Margin Onder:</label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              name="boxMarginBottom"
+              id="boxMarginBottom"
+              value="20"
+              step="5"
+            />
+            <label for="boxMarginLeft">Margin Links:</label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              name="boxMarginLeft"
+              id="boxMarginLeft"
+              value="20"
+              step="5"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Rand</legend>
+            <label for="boxBorderWidth">Border:</label>
+            <input
+              type="range"
+              min="0"
+              max="20"
+              name="boxBorderWidth"
+              id="boxBorderWidth"
+              value="10"
+              step="1"
+            />
+          </fieldset>
+        </form>
+      </aside>
+    </div>
+
+    <div class="box-code">
+      <h2>CSS Code:</h2>
+      <pre><code id="boxCode"></code></pre>
+    </div>
+
+    <script src="scripts/demo.js"></script>
+  </body>
+</html>
